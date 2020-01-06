@@ -1,0 +1,160 @@
+>>Git Local<<
+1.  Ecolher/Criar uma pasta onde ficará os projetos com controle de versão (pode nomer como pasta Git)
+
+2. Projeto Git
+-work Directory    -> git add
+-Staging Directory -> git commit
+- Git Directory
+
+3. Instalação do git
+- sudo apt-get install git
+
+4. Configuração do  Git
+-git config --global user.name "Anderson Garcia"
+-git config --global user.email "andersongarcia.poa@gmail.com"
+
+5.Criar e trabalhar com um Repositório local
+
+	a. git init (cria um repositório na pasta que você está)
+
+	b. git status (status atual do repositório)
+
+	c. git add . ou *.js (adiciona os arquivos e alterações para a staging
+
+	d. git status
+
+	e. git commit -m "Base do Projeto" ou git commit -a -m "Base do Projeto"
+
+	f. git status
+
+
+
+6. Arquivos ignorados, não monitorados pelo controle de versão.
+- .gitignore (escrever dentro deste o nome do arquivos e pastas a serem ignorados pelo git. Ex.: o próprio .gitignore , test.txt, temp/. Sendo um arquivo por linha e a barra significa que é uma pasta)
+
+
+
+
+7. Visualizar Alterações
+- git diff (mostra o que foi alterado no arquivo que está no work)
+
+- git diff --staged (mostra o que foi alterado no arquivo que está no staging)
+
+
+
+
+8. Histórico de todos os Commit's
+- git log (mostra os comiit em ordem cronológica)
+
+- git log -p (mostra os comiit em ordem cronológica com os diff)
+
+- git log --pretty=online (mostra os commit's, as chaves e as menssgens)
+
+- end (para sair pressionar Q)
+
+git log -p -10 (traz os últimos 10 commit's)
+
+
+
+
+9. gitk (ver relatórios de alterações)
+
+
+10. Editar um Commit
+- Alterar o projeto
+- git add .
+- git commit --amend -m "Novas Funcionalidades (edição)"
+
+
+11. Retirar um arquivo da Staging area
+- git reset HEAD arquivo.js
+
+
+12.  Descartar as Alterações feitas num Arquivo na work area
+- git checkout --arquivo.js
+
+
+13. Remover um Arquivo do Repositório
+- git rm arquivo.js (assim como para add tem que ser git add.)
+
+14. Tags (ponteiro)
+- git tag (lista as tags)
+- git tag -a v1.0 -m "Versão 1.0" (tag criada no commit atual)
+- git tag -a v0.0 numerodaChave -m "Versão 0.0" (cria a tag no commit escolhido)
+
+- git show v1.0 (mais detalhes da tag)
+
+
+
+15. Trocar para uma versção anteriror
+- git checkout v0.0 (troca para o ponteiro/tag/commit da versão 0.0)
+- git checkout v1.0
+- git checkout master
+
+
+
+16. Deletar uma Tag
+- git tag -d v0.0
+
+
+17. criando branch (ramificação)
+- master (cliente)
+- produção
+- teste
+- desenvolvimento
+- homologação
+
+- git branch teste (criou ramo teste0
+- git checkout teste (entrou no branch teste)
+
+
+
+18. Merge (faz mesclagem  dos arquivos e alteraçõesestando no branch que você quer fazer as alterações)
+
+- git merge teste
+
+
+19. Deletar um branch
+
+- git branch -d teste
+
+
+20. Conflitos de merge
+- resolver os conflitos e depois commitar para concluir o merge lá no código fonte do arquivo
+
+
+_____________________________________________________
+
+>>Rede Local<<
+
+1. Criar uma pasta de projetos com acesso a todos na rede
+
+2. Git instalados em todas as máquinas, inclusive no server
+
+3. criar um Repositório dentro da pasta projetos do server
+- git init --bare
+
+
+4. As estações de trabalho na rede devem criar um clone
+- git clone file:////nomedoServer/Projetos/cliente1 prjrede1
+
+- git add .
+- git commit -m "Base do Projeto"
+
+
+5. PUSH: enviar os dados para o server depois do commit
+- git remote (origin)
+- git push origin master (enviou meu commit para o Repositório do server)
+
+6. PULL (faz um merge do Repositório do Server com a pasta do projeto no seu pc)
+
+- git pull origin master
+
+7. FECTH (atualiza o projeto num branch diferente e não faz um merge no master)
+
+- git fetch origin branch teste
+
+
+
+
+
