@@ -1,0 +1,80 @@
+1. Declaração de variáveis
+var
+const
+let
+
+2. Funções
+function () {
+return
+}
+
+() => {
+}
+
+3. Array
+array = [1,2,3]
+array [3] = 4
+//array = [1,2,3,4]
+
+4. Object
+
+peaple = {
+name: 'Anderson',
+year: '40',
+profession: 'Developer'
+}
+
+5. Condition
+if(){
+}
+
+else{
+}
+
+if(){
+}else{
+}
+
+else if{
+}
+
+switch(){
+case: condition
+case: condition
+default: condition
+}
+
+
+6. Loops
+
+for(i=0; i<var.legnth; i++) {
+
+}
+
+
+let number = [1,2,3,4,5];
+for (let i of number){
+console.log(i);
+}
+
+
+object = {
+name: 'Anderson',
+year: '40',
+profession: 'Developer'
+}
+for (const property in object) {
+   console.log(`${property}: ${object[property]}`);
+}
+
+
+let number = 5;
+while(number<5) {
+}
+
+
+
+Documents
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+
+

@@ -28,3 +28,17 @@
 - git add .
 - git commit -m "Outros Arquivos"
 - git push origin master
+
+7. Fork (copia o projeto open source do Github para minha conta do Github)
+
+8. Pull request (depois de commitar as alterações da sua colaboração no projeto, fazer um push para o meu Github e um pull request para a conta dono do projeto)
+
+- new pull request
+- craet pull request
+- Título e Dscrição
+- Send pull request
+
+9. Deletar u repositório do github
+- na minha máquina, apenas deletar a pasta
+- no github: setting> Delete This Reposite>digitar o nome do repositório e confirmar
+

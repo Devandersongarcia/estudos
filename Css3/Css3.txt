@@ -1,0 +1,115 @@
+
+Css3
+selector{property:value;}
+
+*{margin:0;padding:0;backgroung-color:orange;}
+*{box-sizing:border-box;}
+*{font-size:100%;}
+
+h1, h2 {cor:red;}
+input[type="text"]{color:blue;}
+
+.class-título{color:red; text-align:center;}
+.class-backgroud{background-color:orange; padding:20px}
+#idContent{width: 80%; eight:20px; background-color:blue; padding:20px; color:green}
+#class:hover{width:350px; heigth:350px; backgroung-color:green; opacity:0.5;}
+Property:
+color: write or #fff; (css color names)
+
+background: linear-gradient(to top left,red,blue,green); or (45deg,red,blue,green);
+
+background:radial-gradient(blue,green);
+
+background-color
+background-image:url(../img.jpg);
+background-repeat:repeat-x or repeat-y or no-repeat;
+background-position:left or right or center;
+background-position:left center;
+background-attachment:fixed or scrool;
+background-size:300px 500px or 100% 80%;
+background: url(../img.jpg) center center/100% 80% no-repeat fixed;
+
+
+
+
+float:right or left;
+position: static or fixed or absolute or relative;(right:100px; top:0px)
+Obs.: absolute qualquer lugar da página. Se colocar realite na div pai, vai se posicionar em relaçõa a div pai.Exceto no fixed que vai sempre se posicionar com a página.
+
+margin
+margin-top
+margin-bottom
+margin-right
+marginleft
+padding
+padding-top
+padding-bottom
+padding-right
+padding-left
+padding: 10px 20px 30px 30px;(top,right,bottom,left)
+box-sizing:border-box;
+width
+height
+text-align:center or justify or left or right;
+text-decoration: overline or underline or line-through or none;
+text-transform:uppercase or lowercase capitalize;
+text-indent
+line-height
+direction: rtl or ltr;
+letter-spacing
+word-spacing
+text-shadow: 3px 3px 4px red (horizontal, vertical, desfoque , cor)
+
+
+border-sstyle:dotted or dashed or solid or double or groove ridge or inset or outset;
+
+border-width:5px;
+border-color:red;
+border: solid 5px red;
+border-top: solid 5px red;
+border-bottom:solid 5px red;
+border-rigth:solid 5px red;
+border-left:solid 5px red;
+
+outline:dotted 5px green;
+
+transition-property:width;
+transition-duration:2s;
+transition-timing-function:ease or ease-in or ease-out or ease-in-out or linear;
+transition-delay:2a;
+
+transition: width 2s linear 1s, heigth 2s linear;
+transition: all 2s linear;
+
+border-radius:20px 50px;
+border-top-right-radius:20px;
+overflow: visible hidden scroll auto;
+opacity:1 0.5; (100% 50%)
+font-zise: 20px or 1em;(valor padrão do navegador 16px)
+font-weight: normal or bold;
+fot-style: normal or italic or oblique;
+font-family: Times, "Times New Roman", sans-serif;
+font-variant: normal or small-caps;
+
+Obs.: fontsquirrel.com (baixar e colococar este arquivo na raiz do projeto nomeDaFonte.woff)
+@font-face{
+font-family:nomeDaFonte;
+src= url(nomeDaFonte.woff);
+}
+
+Google Fonts
+-escolhe a finte
+- clica em use
+- copia a tag de link e cola no head
+- utiliza o font-family
+
+
+
+value:
+none
+20 px
+20 %
+#fff
+red
+1em = 16px(fazer regra de 3 para colocar tamanho em px.Ex.: 2em = 32px)
+
